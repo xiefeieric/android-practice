@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AABillManager</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="tvTopTitle"> AA Bill Manager</string>
+    <string name="WelcomeInfo">Welcome to use AA Bill Manager</string>
+    <string name="appGridTextPayoutAdd">Create Bill</string>
+    <string name="appGridTextPayoutManage">Search Bill</string>
+    <string name="appGridTextStatisticsManage">Bill Analysis</string>
+    <string name="appGridTextAccountBookManage">Bill Manage</string>
+    <string name="appGridTextCategoryManage">Bill Category</string>
+    <string name="appGridTextUserManage">User Manage</string>
+
+
+
+</resources>
