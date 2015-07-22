@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                tools:context="com.fei.youlu.fragment.FragmentContacts">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/img01_02"
+
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img07_03"
+            android:id="@+id/ivAdd"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="138-888"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img07_06"
+            android:id="@+id/ivDelete"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvCalls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/img02t_02"
+        android:paddingTop="10dp"></ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <GridView
+            android:id="@+id/gvKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:numColumns="3"
+            android:background="@drawable/img07_02"></GridView>
+
+        <ImageView
+            android:id="@+id/ivDial"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/img07_15"
+            android:padding="3dp"
+            android:background="@drawable/img06t_02"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

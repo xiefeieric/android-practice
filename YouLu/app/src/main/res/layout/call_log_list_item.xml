@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".MainActivity"
+              android:gravity="center">
+
+    <com.tarena.utils.ImageCircleView
+        android:id="@+id/ivPhoto"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="15sp"
+            android:text="化肥" />
+
+        <TextView
+            android:id="@+id/tvNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:text="133 3333 3333" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:text="03:00" />
+
+</LinearLayout>
