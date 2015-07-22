@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:background="#fffff0"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="2048"
+        android:textColor="#000000"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:id="@+id/tvTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/tvS"
+        android:layout_toStartOf="@+id/tvS"
+        android:layout_above="@+id/tvScore" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="SCORE"
+        android:id="@+id/tvS"
+        android:layout_alignBottom="@+id/tvB"
+        android:layout_toLeftOf="@+id/tvB"
+        android:layout_toStartOf="@+id/tvB"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="BEST"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:id="@+id/tvB"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:text="0"
+        android:textColor="#000000"
+        android:id="@+id/tvBest"
+        android:layout_below="@+id/tvS"
+        android:layout_alignRight="@+id/tvB"
+        android:layout_alignEnd="@+id/tvB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:textColor="#000000"
+        android:id="@+id/tvScore"
+        android:layout_above="@+id/btnInfo"
+        android:layout_alignRight="@+id/tvS"
+        android:layout_alignEnd="@+id/tvS" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESTART"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btnRestart"
+        android:layout_alignTop="@+id/btnInfo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:layout_marginRight="10dp"
+        android:id="@+id/btnInfo"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/tvBest"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <eric.com.game2048.GameView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/glGameView"
+        android:layout_below="@+id/btnRestart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp">
+
+        </eric.com.game2048.GameView>
+</RelativeLayout>
